@@ -1,0 +1,251 @@
+/* --- Global Styles --- */
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background: #fafafa;
+    color: #222;
+}
+
+/* --- Content Sections --- */
+/* Kept the container padding, but removed max-width as Bootstrap's .container handles it */
+.container {
+    padding: 0 20px;
+}
+
+.card, .event {
+    /* Removed custom card styling as Bootstrap's .card and utility classes handle it */
+    margin-bottom: 20px;
+}
+
+/* Custom button color */
+button, .btn-danger {
+    background: #c8102e !important;
+    border: none !important;
+    border-radius: 6px;
+    padding: 10px 18px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s;
+    color: white !important;
+}
+
+button:hover, .btn-danger:hover {
+    background: #a00d26 !important;
+}
+
+/* Style for the placeholder info sections */
+.info-section {
+    padding: 40px 20px;
+    margin-bottom: 20px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+}
+
+.info-section h2, .info-section h3 {
+    color: #c8102e;
+    border-bottom: 2px solid #c8102e;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+
+/* ========================================= */
+/* --- Hero Section (MUST BE KEPT) --- */
+/* ========================================= */
+.hero {
+    position: relative;
+    height: 100vh; 
+    overflow: hidden;
+    margin-bottom: 0; 
+}
+
+.hero video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4); /* Darker overlay */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    padding: 40px;
+    text-align: center;
+}
+
+.hero-title {
+    color: white; 
+    font-size: 48px; 
+    font-weight: 700;
+    margin: 0 0 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.hero-sub {
+    font-size: 20px;
+    color: white; 
+    max-width: 700px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+/* --- Footer --- */
+.footer {
+    text-align: center;
+    padding: 25px;
+    background: #f4f4f4;
+    color: #555;
+    font-size: 14px;
+}
+
+/* NEW: Footer Social Links */
+.social-links a {
+    color: white;
+    font-size: 1.8rem;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #c8102e; /* Ilocos Red on hover */
+}
+
+/* --- Map Container Styles (KEPT) --- */
+.map-container {
+    overflow: hidden;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    position: relative;
+    margin-top: 15px;
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+
+/* --- Accordion Styles for Itineraries (KEPT for custom visual overrides) --- */
+/* NOTE: The general structure is now Bootstrap's, but custom colors are applied here */
+.accordion-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #c8102e !important; /* Primary Ilocos red color */
+    color: white !important;
+    font-weight: 600;
+}
+
+.accordion-button:focus {
+    box-shadow: none !important;
+    border-color: #a00d26 !important;
+}
+
+.accordion-button::after {
+    filter: brightness(0) invert(1); /* Makes the arrow white on active button */
+}
+
+/* Re-styling the accordion header to use custom colors */
+.accordion-header {
+  transition: background-color 0.3s;
+}
+
+.accordion-header:hover button:not(.collapsed) {
+  background-color: #a00d26 !important;
+}
+
+.itinerary-day {
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px dashed #ddd;
+}
+.itinerary-day:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.itinerary-day h4 {
+  color: #444;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.itinerary-day ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+.itinerary-day ul li {
+  padding: 5px 0;
+  color: #555;
+}
+
+
+/* --- Event/Festival Card Styles (KEPT, using Bootstrap grid now) --- */
+.event-card-grid {
+    /* Removed custom grid styles, now handled by Bootstrap row/cols */
+    margin-top: 20px;
+}
+.event-card {
+    /* Kept custom hover effect */
+    transition: transform 0.2s;
+}
+.event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+.event-card h3 {
+    color: #c8102e;
+    margin-top: 0;
+}
+.event-card .month {
+    display: inline-block;
+    background-color: #f4f4f4;
+    color: #555;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* NEW: Food Grid Styles (Updated for Bootstrap) */
+.food-item {
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.food-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.food-item h3 {
+    color: #c8102e;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+/* NEW: Fix for the custom accordion inside the food cards */
+.accordion-button.bg-light {
+    background-color: #f8f9fa !important; /* Light gray background */
+    color: #c8102e; /* Red text */
+    font-weight: 600;
+}
+.accordion-button.bg-light:not(.collapsed) {
+    background-color: #f0f0f0 !important; /* Slightly darker when open */
+    color: #c8102e !important;
+}
+
+/* NEW: Carousel/Highlights Styles */
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.6) !important;
+    border-radius: 5px;
+    padding: 10px !important;
+}

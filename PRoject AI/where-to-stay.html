@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ilocos Norte - Where to Stay</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Ilocos Norte</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="getting-here.html">GETTING HERE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="where-to-stay.html">WHERE TO STAY</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="things-to-do.html">THINGS TO DO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="what-to-eat.html">WHAT TO EAT</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<div class="container my-5 pt-5">
+  
+  <section class="info-section">
+    <h2>Where to Stay in Ilocos Norte 🛌</h2>
+    <p>Find the perfect accommodation for your stay, whether you prefer city convenience, beachfront luxury, or heritage charm.</p>
+  </section>
+
+  </div>
+  <div class="card p-4 shadow-sm mb-4" id="accommodation-map">
+      <h3>📍 Map View of Accommodations</h3>
+      <div class="map-container" style="height: 400px; width: 100%; overflow: hidden; border: 1px solid #ddd; border-radius: 4px;">
+          <iframe
+              width="100%"
+              height="100%"
+              frameborder="0"
+              style="border:0"
+              src="https://maps.google.com/maps?q=Hotels%20in%20Ilocos%20Norte&t=&z=10&ie=UTF8&iwloc=&output=embed" 
+              allowfullscreen>
+          </iframe>
+      </div>
+  </div>
+  <div class="accommodation-list">
+    
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+      
+      <div class="col">
+          <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                  <span class="badge bg-warning text-dark mb-2">₱₱ Mid-Range</span>
+                  <h4 class="card-title">Fort Ilocandia Resort and Casino</h4>
+                  <p class="card-text">A sprawling beach resort with a wide array of amenities, including a golf course and casino. Close to Laoag airport.</p>
+                  <p class="card-subtitle text-muted location">Location: Laoag City</p>
+              </div>
+          </div>
+      </div>
+
+      <div class="col">
+          <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                  <span class="badge bg-warning text-dark mb-2">₱₱ Mid-Range</span>
+                  <h4 class="card-title">Pamulinawen Hotel</h4>
+                  <p class="card-text">Modern boutique hotel in the heart of Laoag City, offering easy access to the Capitol and commercial centers.</p>
+                  <p class="card-subtitle text-muted location">Location: Laoag City</p>
+              </div>
+          </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100 shadow-sm">
+            <div class="card-body">
+                <span class="badge bg-danger mb-2">₱₱₱ Luxury</span>
+                <h4 class="card-title">Sitio Remedios Heritage Village</h4>
+                <p class="card-text">Stay in reconstructed Spanish-era 'balays' (houses) for a unique heritage experience. Ideal for couples and a serene escape.</p>
+                <p class="card-subtitle text-muted location">Location: Currimao</p>
+            </div>
+        </div>
+      </div>
+
+      <div class="col">
+          <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                  <span class="badge bg-success mb-2">₱ Budget</span>
+                  <h4 class="card-title">Saud Beach Cottages/Homestays</h4>
+                  <p class="card-text">A strip of affordable native-style cottages and rooms lining the long, crescent-shaped Saud Beach. Book early during peak season.</p>
+                  <p class="card-subtitle text-muted location">Location: Saud Beach, Pagudpud</p>
+              </div>
+          </div>
+      </div>
+      
+    </div>
+  </div>
+
+  <div class="card p-4 shadow-sm mt-5 mb-5" id="faqs">
+    <h3>Frequently Asked Questions (FAQs)</h3>
+    <div class="accordion accordion-flush" id="faqAccordion">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    What is the best area to stay for beach access?
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    For pristine white-sand beaches, **Pagudpud** (specifically Saud Beach or Blue Lagoon) is highly recommended. Laoag offers more proximity to the city center and heritage sites.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Should I book accommodation in advance?
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    Yes, absolutely. During peak seasons (Holy Week, Christmas, and summer months of April/May), accommodation can be fully booked, especially for popular spots in Pagudpud and heritage sites like Sitio Remedios.
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  
+
+  <div class="card p-4 shadow-sm mt-5" id="booking-inquiry">
+    <h3>Need Personalized Recommendations?</h3>
+    <p>Let us help you find the best stay that matches your itinerary, budget and needs.</p>
+    <button class="btn btn-danger" onclick="alert('Sending inquiry to Accommodation Desk...')">Send Inquiry</button>
+  </div>
+</div>
+
+<footer class="footer">
+    <div class="container text-center">
+        <div class="social-links mb-3">
+            <a href="https://www.facebook.com/IlocosNorteOfficial" target="_blank" aria-label="Ilocos Norte Tourism Facebook"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://www.instagram.com/ilocosnortetourism/" target="_blank" aria-label="Ilocos Norte Tourism Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://ilocosnorte.ph/" target="_blank" aria-label="Ilocos Norte Official Website"><i class="fas fa-globe"></i></a>
+        </div>
+        <p>© 2025 Ilocos Norte Tourism | All rights reserved. | <a href="#" class="text-white text-decoration-none">Privacy Policy</a></p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</body>
+</html>

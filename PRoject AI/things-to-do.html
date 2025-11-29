@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ilocos Norte - Tour Packages & Itineraries</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Ilocos Norte</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+          <li class="nav-item"><a class="nav-link" href="getting-here.html">GETTING HERE</a></li>
+          <li class="nav-item"><a class="nav-link" href="where-to-stay.html">WHERE TO STAY</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="things-to-do.html">THINGS TO DO</a></li>
+          <li class="nav-item"><a class="nav-link" href="what-to-eat.html">WHAT TO EAT</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<div class="container my-5 pt-5">
+  
+  <section class="info-section">
+    <h2>Ilocos Norte Tour Packages & Itineraries</h2>
+    <p>Choose from our suggested itineraries to make the most of your visit, covering everything from heritage sites to stunning natural beaches.</p>
+  </section>
+
+  <div class="accordion" id="itinerariesBootstrap">
+    
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          3 DAYS / 2 NIGHTS: Heritage & Nature Highlights
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#itinerariesBootstrap">
+        <div class="accordion-body">
+          <div class="itinerary-day">
+            <h4>DAY 1: Laoag City & Paoay</h4>
+            <ul>
+              <li>Arrival at Laoag International Airport (LAO).</li>
+              <li>Check-in at Hotel.</li>
+              <li>Visit **Paoay Church** (UNESCO World Heritage Site).</li>
+              <li>Explore **Paoay Sand Dunes** (optional 4x4 ride).</li>
+            </ul>
+          </div>
+          <div class="itinerary-day">
+            <h4>DAY 2: Northern Coast Adventure</h4>
+            <ul>
+              <li>Travel North to **Bangui Windmills**.</li>
+              <li>Visit **Kapurpurawan Rock Formation**.</li>
+              <li>Relax at **Saud Beach** in Pagudpud.</li>
+            </ul>
+          </div>
+          <div class="itinerary-day">
+            <h4>DAY 3: Culture & Departure</h4>
+            <ul>
+              <li>Visit **Malacañang of the North**.</li>
+              <li>Breakfast/Brunch featuring Ilocos **Empanada**.</li>
+              <li>Departure from Laoag.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          4 DAYS / 3 NIGHTS: Complete Ilocos Experience
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#itinerariesBootstrap">
+        <div class="accordion-body">
+          <div class="itinerary-day">
+            <h4>DAY 1: Arrival & Culture Immersion</h4>
+            <p>Similar to Day 1 of the 3D/2N itinerary, plus a visit to the Sinking Bell Tower.</p>
+          </div>
+          <div class="itinerary-day">
+            <h4>DAY 2: Northern Beauty</h4>
+            <p>Full day dedicated to Pagudpud's coast (Bangui, Kapurpurawan, Blue Lagoon).</p>
+          </div>
+          <div class="itinerary-day">
+            <h4>DAY 3: Vigan Side Trip (Ilocos Sur)</h4>
+            <p>A day trip to the neighboring province to explore **Calle Crisologo** and Bantay Bell Tower.</p>
+          </div>
+          <div class="itinerary-day">
+            <h4>DAY 4: Leisure & Departure</h4>
+            <p>Shopping for Ilocano treats like **Bagnet** and **Chichacorn** before heading to the airport.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="card p-4 shadow-sm mt-4 ai-itinerary">
+    <h2>🧠 AI Trip Recommender</h2>
+    <p>Not sure which itinerary fits you? Let our smart assistant help!</p>
+
+    <form id="aiForm">
+      <div class="mb-3">
+        <label for="duration" class="form-label">Trip Duration:</label>
+        <select id="duration" class="form-select">
+          <option value="3">3 Days</option>
+          <option value="4">4 Days</option>
+          <option value="5">5+ Days</option>
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <label for="budget" class="form-label">Budget Range:</label>
+        <select id="budget" class="form-select">
+          <option value="budget">₱ Budget Traveler</option>
+          <option value="midrange">₱₱ Midrange</option>
+          <option value="luxury">₱₱₱ Luxury</option>
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <label for="interest" class="form-label">Main Interest:</label>
+        <select id="interest" class="form-select">
+          <option value="heritage">Heritage & Culture</option>
+          <option value="beach">Beaches & Nature</option>
+          <option value="adventure">Adventure</option>
+          <option value="food">Food & Local Experience</option>
+        </select>
+      </div>
+
+      <button type="button" class="btn btn-danger" onclick="recommendItinerary()">Find My Itinerary</button>
+    </form>
+
+    <div id="aiResult" class="card p-4 shadow-sm mt-3 result-box" style="background-color:#f8f9fa;">
+      <p>✨ Your recommended itinerary and map will appear here.</p>
+    </div>
+  </section>
+  
+  <section class="info-section mt-4">
+    <h2>Major Events and Festivals 🎉</h2>
+    <p>Experience the heart of Ilocano culture by timing your visit with one of these celebrated events.</p>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100 text-center">
+            <div class="card-body">
+                <span class="badge bg-danger mb-2">FEBRUARY</span>
+                <h5 class="card-title">Pamulinawen Festival</h5>
+                <p class="card-text">Laoag City's grand celebration of its patron saint, **St. William the Hermit**, featuring street dancing, the Calesa Parade, and the Dulang Food Festival.</p>
+                <button class="btn btn-sm btn-outline-danger">Learn More</button>
+            </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 text-center">
+            <div class="card-body">
+                <span class="badge bg-danger mb-2">FEBRUARY / MARCH</span>
+                <h5 class="card-title">Guling-Guling Festival</h5>
+                <p class="card-text">A traditional religious festival held in Paoay as a prelude to the Lenten season. Highlights include the **smearing of rice flour** on foreheads, signifying purification.</p>
+                <button class="btn btn-sm btn-outline-danger">See Schedule</button>
+            </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 text-center">
+            <div class="card-body">
+                <span class="badge bg-danger mb-2">FEBRUARY (Annually)</span>
+                <h5 class="card-title">Tan-Ok ni Ilocano Festival of Festivals</h5>
+                <p class="card-text">The "Greatness of the Ilocano" is a massive cultural dance competition where representatives from all towns showcase their unique history and traditions.</p>
+                <button class="btn btn-sm btn-outline-danger">Watch Highlights</button>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="card p-4 shadow-sm mt-4" id="contact">
+    <h3>Book Your Tour</h3>
+    <p>Contact us to customize an itinerary or book one of our packages.</p>
+    <button class="btn btn-danger" onclick="alert('Proceeding to Booking Form...')">Book Now</button>
+  </div>
+</div>
+
+<footer class="footer bg-dark text-white text-center py-3 mt-5">
+    <div class="container text-center">
+        <div class="social-links mb-3">
+            <a href="https://www.facebook.com/IlocosNorteOfficial" target="_blank" aria-label="Ilocos Norte Tourism Facebook"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://www.instagram.com/ilocosnortetourism/" target="_blank" aria-label="Ilocos Norte Tourism Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://ilocosnorte.ph/" target="_blank" aria-label="Ilocos Norte Official Website"><i class="fas fa-globe"></i></a>
+        </div>
+        <p>© 2025 Ilocos Norte Tourism | All rights reserved. | <a href="#" class="text-white text-decoration-none">Privacy Policy</a></p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+<script>
+/**
+ * Saves the suggested itinerary as a text file.
+ */
+function saveItinerary(title, sites) {
+    const itineraryText = `Ilocos Norte Trip Itinerary: ${title}\n\nKey Destinations:\n${sites.replace(/<li>/g, '\n- ').replace(/<\/li>/g, '').trim()}\n\n--- End of Itinerary ---\n\n(Generated on ${new Date().toLocaleDateString()})`;
+    
+    const blob = new Blob([itineraryText], { type: 'text/plain' });
+    const url = URL.createObjectURL(blob);
+    
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'Ilocos_Norte_Itinerary.txt';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    
+    alert('Itinerary saved as Ilocos_Norte_Itinerary.txt!');
+}
+
+/**
+ * Generates a stable Google Maps embedded URL for a route based on key sites.
+ * Ilocos Sur sites are filtered out to keep the map focused on Ilocos Norte.
+ */
+function generateMapUrl(sites) {
+    // 1. Clean the site names and ensure they are searchable locations
+    const mapLocations = sites
+        .map(site => site.replace(/\*\*.*?\*\*|\(|\)|\*|✅| (Food Tour)| (Beach)| (Adventure)| (Quick Visit)| (Nature Focus)| (Trek)| (Local Market)| (tasting)/g, '').trim()) 
+        .filter(site => 
+            site.toLowerCase() !== 'leisure day' && 
+            site.toLowerCase() !== '2-day vigan/ilocos sur exploration' &&
+            site.toLowerCase() !== 'all major ilocos norte sites' &&
+            // Filter to exclude Ilocos Sur locations (Vigan, Baluarte, etc.)
+            !site.toLowerCase().includes('vigan') && 
+            !site.toLowerCase().includes('baluarte') 
+        ) 
+        .join(' to '); // Join locations with ' to ' for a multi-point search
+
+    // 2. Base URL for Google Maps embedded search (FIXED: Using a standard embeddable search query)
+    const baseUrl = "https://maps.google.com/maps?q=";
+
+    // 3. Construct the full URL for the iframe
+    return baseUrl + encodeURIComponent(mapLocations + ", Ilocos Norte, Philippines") + '&t=&z=10&ie=UTF8&iwloc=&output=embed';
+}
+
+/**
+ * Enhanced Rule-Based Expert System for Itinerary Recommendation (Logic kept intact)
+ */
+function recommendItinerary() {
+    // 1. Get user preferences and elements
+    const duration = document.getElementById("duration").value;
+    const budget = document.getElementById("budget").value;
+    const interest = document.getElementById("interest").value;
+    const resultBox = document.getElementById("aiResult");
+
+    let suggestion = "";
+    let focusSites = []; // Array to hold sites for map generation
+    
+    // Clear previous results and show loading
+    resultBox.innerHTML = "<p>⏳ Analyzing your preferences...</p>";
+    resultBox.style.display = 'block';
+    
+    // Simulate API call delay
+    setTimeout(() => {
+        // --- Rule-Based Logic (Expert System) ---
+        if (duration === "3" && interest === "heritage") {
+            suggestion = "✨ **3-Day Heritage Explorer:** Focus on the **3D/2N Heritage & Nature** package, specifically prioritizing **Paoay Church** (UNESCO) and cultural sites in Laoag.";
+            focusSites = ['Paoay Church', 'Laoag Cathedral', 'Sinking Bell Tower', 'Malacañang of the North'];
+        } else if (duration === "4" && interest === "beach") {
+            suggestion = "🌊 **4-Day Northern Coast Complete:** We recommend the **4D/3N Complete Ilocos Experience**, with emphasis on the full day in **Pagudpud** (Blue Lagoon, Saud Beach).";
+            focusSites = ['Bangui Windmills', 'Kapurpurawan Rock Formation', 'Patapat Viaduct', 'Blue Lagoon'];
+        } else if (duration === "3" && interest === "adventure") {
+            suggestion = "🚀 **3-Day Thrill Seeker:** Must include the **Paoay Sand Dunes 4x4 ride** and the trek to Kapurpurawan Rock Formation. Book optional adventure tours!";
+            focusSites = ['Paoay Sand Dunes', 'Kapurpurawan Rock Formation', 'Kabigan Falls'];
+        } else if (duration === "5" && budget === "luxury") {
+            suggestion = "👑 **Custom 5+ Day Luxury Itinerary:** You have time for the Complete Experience *plus* an extended stay in Vigan. Contact us for a customized high-end package focusing on boutique hotels.";
+            focusSites = ['Paoay Church', 'Patapat Viaduct', 'Fort Ilocandia', 'Vigan City']; // Vigan is filtered out in map function, but kept here for itinerary note
+        } else if (interest === "food") {
+            suggestion = "🍽️ **The Ilocos Foodie:** Our suggested itineraries can be customized for food, prioritizing local experiences like tasting Ilocos **Empanada**, **Bagnet**, and visiting local markets!";
+            focusSites = ['Laoag Public Market', 'Batac Riverside Empanada'];
+        } else if (duration === "4") {
+            suggestion = "Try the **4D/3N Complete Ilocos Experience** — includes Laoag, Pagudpud, and even a side trip to Vigan!";
+            focusSites = ['Paoay Church', 'Bangui Windmills', 'Kapurpurawan Rock Formation', 'Vigan City'];
+        } else {
+            suggestion = "We recommend the **3D/2N Heritage & Nature Highlights** — explore Paoay Church, Sand Dunes, and Pagudpud’s scenic coast!";
+            focusSites = ['Paoay Church', 'Paoay Sand Dunes', 'Bangui Windmills'];
+        }
+        // --- End of Rule-Based Logic ---
+
+        // --- Budget Estimation (Re-added) ---
+        let baseCost = parseInt(duration) * 1500; // base per day (Budget)
+        if (budget === "midrange") baseCost = parseInt(duration) * 3500; // Mid-range per day
+        if (budget === "luxury") baseCost = parseInt(duration) * 7500; // Luxury per day
+        const formattedPHP = baseCost.toLocaleString('en-PH');
+        
+        // Add cost to suggestion
+        const title = suggestion.split(':')[0].replace(/(\*\*|✨|🌊|🚀|👑|🍽️|—)/g, '').trim(); // Clean title for save function
+        suggestion += `<p>💰 Estimated Trip Cost (Excluding Flights): ₱${formattedPHP}</p>`;
+
+        // Generate the Map URL (Uses the fixed generateMapUrl function)
+        const mapUrl = generateMapUrl(focusSites);
+        
+        // Generate the list of key sites
+        const sitesList = focusSites
+            .filter(site => !site.toLowerCase().includes('vigan') && !site.toLowerCase().includes('ilocos sur'))
+            .map(site => `<li>${site}</li>`).join('');
+
+        // Update the results box with itinerary and map
+        resultBox.innerHTML = `
+            <h4 class="text-danger">${suggestion.split(':')[0]}</h4>
+            <p class="mb-3">${suggestion.split(':')[1] || suggestion}</p>
+            
+            <h5 class="mt-3">Key Destinations:</h5>
+            <ul>${sitesList}</ul>
+            
+            <p class="mt-3" style="font-size:0.9em; color:#555;">*This suggestion is based on our Rule-Based Expert System.</p>
+
+            <h5 class="mt-4">📍 Suggested Route Map (Ilocos Norte Focus):</h5>
+            <div class="map-container" style="height: 400px; width: 100%; overflow: hidden; border: 1px solid #ddd; border-radius: 4px;">
+                <iframe
+                    width="100%"
+                    height="100%"
+                    frameborder="0"
+                    style="border:0"
+                    src="${mapUrl}"
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <button class="btn btn-danger mt-3" onclick="saveItinerary('${title}', '<ul>${sitesList}</ul>')">Save Itinerary</button>
+        `;
+    }, 500); // Small delay
+}
+</script>
+
+</body>
+</html>
